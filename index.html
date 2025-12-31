@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HÀ Nhựt Khôi - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="background-animation">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 class="header-title">HÀ NHỰT KHÔI</h1>
+        </div>
+        <a href="cv\CV_HaNhutKhoi.pdf" class="download-btn" download>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="hero-section">
+        <div class="hero-grid">
+          <aside class="profile-image-card">
+            <div class="profile-frame">
+              <img src="image\nhutkhoi.png" alt="Hà Nhựt Khôi" class="profile-img" />
+            </div>
+          </aside>
+
+          <article class="about-card-new">
+            <h1 class="about-title">
+              About <span class="highlight-red">Me</span>
+            </h1>
+            <p class="about-description">
+              As a student majoring in Information Assurance at FPT
+              University, I constantly explore and learn about system security
+              as well as analyze and detect cyber attacks.
+            </p>
+            <p class="about-description">
+              My arsenal includes cutting-edge technologies and security
+              expertise. I transform ideas into reality, crafting security
+              solutions that leave an indelible mark on the cybersecurity
+              landscape.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Reversing</span>
+              <span class="tech-badge">Malware Analyst</span>
+              <span class="tech-badge">Bruteforce</span>
+              <span class="tech-badge">Exploit</span>
+            </div>
+            <button class="btn-explore" data-tab="contact">Contact Me</button>
+          </article>
+        </div>
+      </section>
+      <nav class="tab-navigation">
+        <button class="tab-btn active" data-tab="about">Overview</button>
+        <button class="tab-btn" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
+      </nav>
+
+      <section class="tab-content">
+        <div class="tab-pane active" id="about">
+          <div class="card-grid">
+            <div class="feature-card">
+              <h4>Security Focus</h4>
+              <p>
+                Specializing in malware analysis, reverse engineering, and
+                network security.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h4>Career Goal</h4>
+              <p>
+                Aiming to become a SOC Analyst and contribute to digital
+                security.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h4>Continuous Learning</h4>
+              <p>
+                Hands-on experience with industry tools and cybersecurity
+                research.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="skills">
+          <div id="skills-container"></div>
+        </div>
+
+        <div class="tab-pane" id="education">
+          <div class="education-container"></div>
+        </div>
+
+        <div class="tab-pane" id="projects">
+          <div class="projects-container"></div>
+        </div>
+
+        <div class="tab-pane" id="achievements">
+          <div class="achievements-container"></div>
+        </div>
+
+        <div class="tab-pane" id="contact">
+          <div class="contact-grid">
+            <div class="contact-info-card">
+              <h4>Secure Communication</h4>
+              <p>You can contact me through the safe channels below:</p>
+
+              <div class="contact-item">
+                <span class="contact-label">EMAIL:</span>
+                <span class="contact-value">khoihn.ce190080@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">PHONE:</span>
+                <span class="contact-value">079-257-7603</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">LOCATION:</span>
+                <span class="contact-value">Can Tho, Vietnam</span>
+              </div>
+            </div>
+
+            <div class="contact-form-card">
+              <h4>Direct Message</h4>
+              <p style="color: var(--color-text-secondary); font-size: 14px; margin-bottom: 20px;">
+                The system is ready to receive information from you.
+              </p>
+              <button class="btn-explore" style="width: 100%;"
+                onclick="window.location.href='mailto:khoihn.ce190080@gmail.com'">
+                Send Email Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 HÀ NHỰT KHÔI | Information Assurance Specialist</p>
+      <p class="footer-subtitle"></p>
+    </div>
+  </footer>
+
+  <script src="js\data.js"></script>
+  <script src="js\main.js"></script>
+</body>
+
+</html>
