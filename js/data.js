@@ -10,7 +10,10 @@ const cvData = {
     height: "175 cm",
     weight: "75 kg",
     interests: [
-      "Coding, CTF, Music and Singing",
+      "Software Development",
+      "Capture The Flag (CTF)",
+      "Reading Books",
+      "Music & Singing"
     ],
     profileImage: "image\nhutkhoi2.jpg",
   },
