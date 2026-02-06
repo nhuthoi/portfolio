@@ -1,12 +1,18 @@
 // ===== DATA.JS =====
 const cvData = {
   personal: {
-    name: "HÀ NHỰT KHÔI",
-    title: "Information Assurance Specialist",
+    name: "Hà Nhựt Khôi",
+    title: "Student - Aspiring SOC Analyst",
     email: "khoihn.ce190080@gmail.com",
     phone: "079-257-7603",
-    location: "Can Tho, Vietnam",
-    address: "Can Tho",
+    location: "Ca Mau, Vietnam",
+    address: "Ca Mau",
+    height: "175 cm",
+    weight: "75 kg",
+    interests: [
+      "Coding, CTF, Music and Singing",
+    ],
+    profileImage: "image\nhutkhoi2.jpg",
   },
   education: [
     {
@@ -108,17 +114,19 @@ const cvData = {
   projects: [
     {
       title: "Open Source Platform and Network Administration",
-      description: "Project documentation and implementation",
+      description:
+        "Linux Network Administration & Open Source Security: From Threat Identification to Risk Mitigation.",
       link: "https://youtube.com/playlist?list=PLmktKq-DnS-mrJJOWt8q1-i5ZVUTrfBxi&si=EQ6gAVIbxTlcHECi",
     },
     {
       title: "Malware Analysis and Reverse Engineering",
-      description: "Project documentation and implementation",
+      description:
+        "Comprehensive malware analysis: From understanding its structure to actively implementing defenses to protect systems against real-world threats.",
       link: "https://youtube.com/playlist?list=PLmktKq-DnS-luAPI__yBFt4IEnRJUoHZv&si=hZnmMUylPk4ySVTQ",
     },
     {
       title: "Attack Simulation System And Common Types Of Attacks",
-      description: "Project documentation and implementation",
+      description: "identify common types of cyber attacks nowadays",
       link: "https://youtube.com/playlist?list=PLmktKq-DnS-kgUVWEdMnJlx8fc_sLFnRF&si=3-IWzEMHNOgRG34E",
     },
   ],
@@ -129,3 +137,5 @@ const cvData = {
       "Apply knowledge to promote information security in the digital era",
   },
 };
+
+// Khoiha

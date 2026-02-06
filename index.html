@@ -20,7 +20,10 @@
     <div class="container">
       <div class="header-content">
         <div class="header-left">
-          <h1 class="header-title">HÀ NHỰT KHÔI</h1>
+          <button class="profile-btn" title="Hà Nhựt Khôi - Profile">
+            <img src="image\nhutkhoi3.png" alt="Hà Nhựt Khôi" class="profile-btn-img" />
+            <span class="profile-btn-text">profile</span>
+          </button>
         </div>
         <a href="cv\CV_HaNhutKhoi.pdf" class="download-btn" download>
           <span>Download CV</span>
@@ -158,6 +161,36 @@
       <p class="footer-subtitle"></p>
     </div>
   </footer>
+
+  <!-- Profile Modal -->
+  <div class="profile-modal" id="profileModal">
+    <div class="profile-modal-content">
+      <button class="profile-modal-close" id="closeProfileModal">&times;</button>
+      <div class="profile-modal-body">
+        <div class="profile-modal-image">
+          <img src="image\nhutkhoi2.jpg" alt="Hà Nhựt Khôi" />
+        </div>
+        <div class="profile-modal-info">
+          <h2 id="profileName"></h2>
+          <p id="profileTitle" class="profile-title"></p>
+          <div class="profile-details">
+            <div class="profile-detail-item">
+              <span class="detail-label">Height:</span>
+              <span class="detail-value" id="profileHeight"></span>
+            </div>
+            <div class="profile-detail-item">
+              <span class="detail-label">Weight:</span>
+              <span class="detail-value" id="profileWeight"></span>
+            </div>
+            <div class="profile-detail-item">
+              <span class="detail-label">Interests:</span>
+              <div class="profile-interests" id="profileInterests"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js\data.js"></script>
   <script src="js\main.js"></script>

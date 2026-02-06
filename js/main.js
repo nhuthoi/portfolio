@@ -2,6 +2,7 @@ class TabManager {
   constructor() {
     this.tabBtns = document.querySelectorAll(".tab-btn");
     this.tabPanes = document.querySelectorAll(".tab-pane");
+    this.profileBtn = document.querySelector(".profile-btn");
     this.init();
   }
 
@@ -9,6 +10,27 @@ class TabManager {
     this.tabBtns.forEach((btn) => {
       btn.addEventListener("click", () => this.switchTab(btn));
     });
+
+    // Profile button functionality - show modal
+    if (this.profileBtn) {
+      this.profileBtn.addEventListener("click", () => {
+        this.showProfileModal();
+      });
+    }
+
+    // Profile modal close button
+    const closeBtn = document.getElementById("closeProfileModal");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => this.closeProfileModal());
+    }
+
+    // Close modal when clicking outside
+    const modal = document.getElementById("profileModal");
+    if (modal) {
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) this.closeProfileModal();
+      });
+    }
 
     const heroContactBtn = document.querySelector(".btn-explore");
     if (heroContactBtn) {
@@ -22,6 +44,32 @@ class TabManager {
     this.renderEducation();
     this.renderAchievements();
     this.renderProjects();
+  }
+
+  showProfileModal() {
+    const modal = document.getElementById("profileModal");
+    if (!modal) return;
+
+    // Set profile information
+    document.getElementById("profileName").textContent = cvData.personal.name;
+    document.getElementById("profileTitle").textContent = cvData.personal.title;
+    document.getElementById("profileHeight").textContent = cvData.personal.height;
+    document.getElementById("profileWeight").textContent = cvData.personal.weight;
+
+    // Render interests
+    const interestsContainer = document.getElementById("profileInterests");
+    interestsContainer.innerHTML = cvData.personal.interests
+      .map((interest) => `<span class="interest-tag">${interest}</span>`)
+      .join("");
+
+    modal.classList.add("active");
+  }
+
+  closeProfileModal() {
+    const modal = document.getElementById("profileModal");
+    if (modal) {
+      modal.classList.remove("active");
+    }
   }
 
   switchTab(btn) {
@@ -148,3 +196,5 @@ cvData.skills.forEach((skill) => {
   group.appendChild(tagsWrapper);
   container.appendChild(group);
 });
+
+// Khoiha
